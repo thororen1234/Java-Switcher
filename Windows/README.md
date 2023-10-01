@@ -19,9 +19,15 @@ C:\Program Files (x86)\Common Files\Oracle\Java\javapath
 Add the following entries:
 ```
 %JAVA_HOME%\bin
+C:\Program Files\Java\scripts
 ```
 
 Click `OK`.
+
+# Scripts
+Unzip the `Windows.zip` file and copy the scripts folder to `C:\Program Files\Java\`.
+
+Now restart your command prompt or powershell if it was open and your done.
 
 # JAVA_HOME Variable
 Check to see if you have a JAVA_HOME system variable, if you don't follow the steps below:
