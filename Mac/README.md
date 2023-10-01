@@ -1,4 +1,6 @@
 # Setup
+Use this or use jdk.sh and make sure to run chmod +x jdk.sh on it.
+
 Add the following to your .bash_profile or .zshrc
 
 for .bash_profile:
