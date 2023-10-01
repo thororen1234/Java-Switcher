@@ -1,7 +1,7 @@
 # Important
 Most of the java versions are set to their default paths, some versions such as jdk 1.2 through 1.5 are set to a different directory as they would have installed directly to the C drive path.
 
-Make sure to check if they all work and if some don't check your java paths in `C:\Program Files\Java\` and `C:\Program Files (x86)\Java\` so you can compare them to javaX.bat
+Make sure to check if they all work and if some don't check your java paths in `C:\Program Files\Java\` and `C:\Program Files (x86)\Java\` so you can compare them to javaX.bat.
 
 # Setup
 Type env into your search bar and click the one that says `edit the system environment variables`.
