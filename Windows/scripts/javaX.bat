@@ -20,6 +20,7 @@ if %1 == "Java 18" set JAVA_HOME=C:\Program Files\Java\jdk-18.0.2.1
 if %1 == "Java 19" set JAVA_HOME=C:\Program Files\Java\jdk-19
 if %1 == "Java 20" set JAVA_HOME=C:\Program Files\Java\jdk-20
 if %1 == "Java 21" set JAVA_HOME=C:\Program Files\Java\jdk-21
+if %1 == "Java 22" set JAVA_HOME=C:\Program Files\Java\jdk-22
 
 if "%~2" == "perm" (
   setx JAVA_HOME "%JAVA_HOME%" /M
