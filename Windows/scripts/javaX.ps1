@@ -21,10 +21,11 @@ switch ($javaVersion) {
 	"Java 19" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-19" }
 	"Java 20" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-20" }
 	"Java 21" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-21" }
+	"Java 22" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-22" }
 }
 
 if ($perm -eq "perm") {
-  [Environment]::SetEnvironmentVariable("JAVA_HOME", $env:JAVA_HOME, [System.EnvironmentVariableTarget]::Machine)
+	[Environment]::SetEnvironmentVariable("JAVA_HOME", $env:JAVA_HOME, [System.EnvironmentVariableTarget]::Machine)
 }
 
 $env:Path = $env:JAVA_HOME + '\bin;' + $env:Path
