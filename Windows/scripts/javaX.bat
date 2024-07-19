@@ -1,5 +1,6 @@
 @echo off
 
+if %1 == "Java 1.1" set JAVA_HOME=C:\Program Files (x86)\Java\jdk-1.1
 if %1 == "Java 1.2" set JAVA_HOME=C:\Program Files (x86)\Java\jdk-1.2
 if %1 == "Java 1.3" set JAVA_HOME=C:\Program Files (x86)\Java\jdk-1.3
 if %1 == "Java 1.4" set JAVA_HOME=C:\Program Files (x86)\Java\jdk-1.4
