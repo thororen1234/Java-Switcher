@@ -1,6 +1,7 @@
 param ($javaVersion, $perm)
 
 switch ($javaVersion) {
+	"Java 1.1" { $env:JAVA_HOME = "C:\Program Files (x86)\Java\jdk-1.1" }
 	"Java 1.2" { $env:JAVA_HOME = "C:\Program Files (x86)\Java\jdk-1.2" }
 	"Java 1.3" { $env:JAVA_HOME = "C:\Program Files (x86)\Java\jdk-1.3" }
 	"Java 1.4" { $env:JAVA_HOME = "C:\Program Files (x86)\Java\jdk-1.4" }
