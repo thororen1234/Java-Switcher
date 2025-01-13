@@ -23,10 +23,17 @@ switch ($javaVersion) {
 	"Java 20" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-20" }
 	"Java 21" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-21" }
 	"Java 22" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-22" }
+	"Java 23" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-23" }
 }
 
 if ($perm -eq "perm") {
-	[Environment]::SetEnvironmentVariable("JAVA_HOME", $env:JAVA_HOME, [System.EnvironmentVariableTarget]::Machine)
+	$IsAdmin = (New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+	if ($IsAdmin) {
+		[Environment]::SetEnvironmentVariable("JAVA_HOME", $env:JAVA_HOME, [System.EnvironmentVariableTarget]::Machine)
+	}
+	else {
+		[Environment]::SetEnvironmentVariable("JAVA_HOME", $env:JAVA_HOME, [System.EnvironmentVariableTarget]::User)
+	}
 }
 
 $env:Path = $env:JAVA_HOME + '\bin;' + $env:Path
