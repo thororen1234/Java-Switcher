@@ -29,6 +29,7 @@ if "%1" == "21" set "JAVA_HOME=C:\Program Files\Java\jdk-21"
 if "%1" == "22" set "JAVA_HOME=C:\Program Files\Java\jdk-22"
 if "%1" == "23" set "JAVA_HOME=C:\Program Files\Java\jdk-23"
 if "%1" == "24" set "JAVA_HOME=C:\Program Files\Java\jdk-24"
+if "%1" == "25" set "JAVA_HOME=C:\Program Files\Java\jdk-25"
 
 if "%JAVA_HOME%"=="" (
   echo Java version "%1" is not recognized.

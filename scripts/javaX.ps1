@@ -30,6 +30,7 @@ switch ($javaVersion) {
     "22" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-22" }
     "23" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-23" }
     "24" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-24" }
+    "25" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-25" }
 }
 
 if ($env:JAVA_HOME -eq "") {

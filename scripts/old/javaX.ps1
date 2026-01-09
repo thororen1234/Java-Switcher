@@ -25,6 +25,7 @@ switch ($javaVersion) {
 	"Java 22" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-22" }
 	"Java 23" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-23" }
 	"Java 24" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-24" }
+	"Java 25" { $env:JAVA_HOME = "C:\Program Files\Java\jdk-25" }
 }
 
 if ($perm -eq "perm") {

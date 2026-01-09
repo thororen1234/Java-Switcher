@@ -24,6 +24,7 @@ if %1 == "Java 21" set JAVA_HOME=C:\Program Files\Java\jdk-21
 if %1 == "Java 22" set JAVA_HOME=C:\Program Files\Java\jdk-22
 if %1 == "Java 23" set JAVA_HOME=C:\Program Files\Java\jdk-23
 if %1 == "Java 24" set JAVA_HOME=C:\Program Files\Java\jdk-24
+if %1 == "Java 25" set JAVA_HOME=C:\Program Files\Java\jdk-25
 
 if "%~2" == "perm" (
   net session >nul 2>&1
