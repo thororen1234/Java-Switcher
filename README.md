@@ -1,14 +1,12 @@
 # Java-Switcher
 
-This a repo for java switching scripts/aliases on Windows and Mac.
+This a repo for java switching scripts/aliases on Windows.
 
 # Downloads
 
 You can get the java versions [here](https://www.oracle.com/java/technologies/downloads/archive/).
 
 # Important
-
-Most of the java versions are set to their default paths, some versions such as jdk 1.2 through 1.5 are set to a different directory as they would have installed directly to the C drive path.
 
 Make sure to check if they all work and if some don't check your java paths in `C:\Program Files\Java\` and `C:\Program Files (x86)\Java\` so you can compare them to javaX.
 
